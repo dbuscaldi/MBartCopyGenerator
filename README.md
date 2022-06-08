@@ -10,7 +10,7 @@ José Angel Gonzalez, Davide Buscaldi, Lluis Hurtado and Emilio Sanchis
 
 
 You can use this class in run_summarization.py, adding some arguments to the parser, and calling the MBartCopyGenerator when loading the model.
-
+```
 if model_args.copy_enhanced:
         logger.info("Using a copy enhanced version of MBart")
         model_type = MBartCopyGenerator
@@ -25,3 +25,4 @@ if model_args.copy_enhanced:
         revision=model_args.model_revision,
         use_auth_token=True if model_args.use_auth_token else None,
     )
+```
